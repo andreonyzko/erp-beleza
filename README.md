@@ -21,4 +21,4 @@ It's a beauty salon and beauty clinic management system. Designed for family bus
 
 - **Frontend**: HTML5, CSS3, and JavaScript  
 - **Backend**: Java with Spring Boot  
-- **Database**: PostgreSQL  
+- **Database**: PostgreSQL
