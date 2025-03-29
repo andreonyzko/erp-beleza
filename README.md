@@ -1,4 +1,4 @@
-# Beauty & Aesthetics ERP
+# ONYERP - Beleza
 
 ## 📌 Overview  
 It's a beauty salon and beauty clinic management system. Designed for family business management, it provides an intuitive and sophisticated interface to handle appointments, sales and financial reports efficiently.
