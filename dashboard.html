@@ -30,36 +30,50 @@
         </nav>
         <main>
             <section>
-                <h1>Agenda</h1>
-                <button>Novo</button>
+                <div>
+                    <p>Faturamento</p>
+                    <div>
+                        <p>R$100,00</p>
+                    </div>
+                    <p>
+                        Serviços: +R$100,00 <br>
+                        Vendas: +R$100,00 <br>
+                        Despesas: -R$100,00
+                    </p>
+                </div>
+                <div>
+                    <p>Tarefas de hoje</p>
+                    <div>
+                        <p>10</p>
+                    </div>
+                    <p>
+                        Agendamentos: 10 <br>
+                        A pagar hoje: 10 <br>
+                        Valor: R$100,00
+                    </p>
+                </div>
+                <div>
+                    <p>Pendencias</p>
+                    <div>
+                        <p>+R$100,00</p>
+                    </div>
+                    <p>
+                        Pagar: R$100,00 <br>
+                        Receber: R$100,00
+                    </p>
+                </div>
             </section>
-            <form action="">
-                <label for="date-filter">Data</label>
-                <input type="date" name="date-filter" id="date-filter">
-                <label for="service-filter">Serviço</label>
-                <input type="search" name="service-filter" id="service-filter">
-                <label for="client-filter">Cliente</label>
-                <input type="search" name="client-filter" id="client-filter">
-                <label for="phone-filter">Telefone</label>
-                <input type="tel" name="phone-filter" id="phone-filter">
-                <label for="cost-filter">Valor</label>
-                <input type="number" name="cost-filter" id="cost-filter">
-                <label for="status-filter">Status</label>
-                <select name="status-filter" id="status-filter">
-                    <option value="paid">Pago</option>
-                    <option value="pending">Pendente</option>
-                </select>
-            </form>
-            <table>
-                <tr>
-                    <td>Data</td>
-                    <td>Serviço</td>
-                    <td>Cliente</td>
-                    <td>Telefone</td>
-                    <td>Valor</td>
-                    <td>Pagamento</td>
-                </tr>
-            </table>
+            <section>
+                <h2>Agenda de hoje</h2>
+                <table>
+                    <tr>
+                        <td>Horário</td>
+                        <td>Serviço</td>
+                        <td>Cliente</td>
+                        <td>Valor</td>
+                    </tr>
+                </table>
+            </section>
         </main>
     </div>
     <footer>
