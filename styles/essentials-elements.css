@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+:root{
+    --beige: #9c8867;
+    --dark_gray: #262626;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: var(--beige);
+}
+
+nav, footer{
+    background-color: var(--dark_gray);
+    color: white;
+}
+
+header img{
+    height: 2rem;
+}
+
+#header-elements{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+}
+
+#nav-main-container{
+    display: flex;
+    flex-direction: row;
+}
+
+main{
+    flex-grow: 1;
+}
