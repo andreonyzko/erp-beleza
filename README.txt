@@ -22,9 +22,3 @@ It's a beauty salon and beauty clinic management system. Designed for family bus
 - **Frontend**: HTML5, CSS3, and JavaScript  
 - **Backend**: Java with Spring Boot  
 - **Database**: PostgreSQL  
-
-## 🚀 Installation  
-
-1. Clone this repository:  
-   ```bash
-   git clone https://github.com/your-username/your-repo.git
