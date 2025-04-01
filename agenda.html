@@ -20,12 +20,14 @@
                 <li><a href=""><img src="media/menu-icons/calendar-icon.png" alt="calendar icon"><p>Agenda</p></a></li>
                 <li><a href=""><img src="media/menu-icons/sell-icon.png" alt="sell icon"><p>Vendas</p></a></li>
                 <li><a href=""><img src="media/menu-icons/buy-icon.png" alt="buy icon"><p>Despesas</p></a></li>
-                <li><a href=""><img src="media/menu-icons/money-icon.png" alt="money icon"><p>Financeiro</p></a></li>
-                <ul>
-                    <li><a href="">A pagar</a></li>
-                    <li><a href="">A receber</a></li>
-                    <li><a href="">Relatório</a></li>
-                </ul>
+                <li>
+                    <a href=""><img src="media/menu-icons/money-icon.png" alt="money icon"> <p>Financeiro</p></a>
+                    <ul>
+                        <li><a href="">A pagar</a></li>
+                        <li><a href="">A receber</a></li>
+                        <li><a href="">Relatório</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
         <main>
@@ -56,14 +58,19 @@
                 </select>
             </form>
             <table> <!-- Tabela da agenda -->
-                <tr>
-                    <td>Data</td>
-                    <td>Serviço</td>
-                    <td>Cliente</td>
-                    <td>Telefone</td>
-                    <td>Valor</td>
-                    <td>Pagamento</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <td>Data</td>
+                        <td>Serviço</td>
+                        <td>Cliente</td>
+                        <td>Telefone</td>
+                        <td>Valor</td>
+                        <td>Pagamento</td>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
             </table>
         </main>
     </div>
@@ -73,60 +80,36 @@
             <form action="">
                 <fieldset>
                     <legend>Dados do cliente</legend>
-                    <div> <!-- Inputs para ação de criar e editar agendamento -->
-                        <label for="client-manageservice">Nome</label>
-                        <input type="text" name="client-manageservice" id="client-manageservice" required>
-                        <label for="tel-manageservice">Telefone</label>
-                        <input type="tel" name="tel-manageservice" id="tel-manageservice" required>
-                        <label for="cpf-manageservice">CPF</label>
-                        <input type="text" name="cpf-manageservice" id="cpf-manageservice">
-                    </div>
 
-                    <div> <!-- Outputs para ver detalhes de um agendamento -->
-                        <label for="client-viewservice">Nome</label>
-                        <output id="client-viewservice">André Luís Onyszko</output>
-                        <label for="tel-viewservice">Telefone</label>
-                        <output id="tel-viewservice">(11) 99912-3456</output>
-                        <label for="cpf-viewservice">CPF</label>
-                        <output id="cpf-viewservice">123.456.789-01</output>
-                    </div>
+                        <label for="client-service">Nome</label>
+                        <input type="text" name="client-service" id="client-service" value="André" required disabled>
+
+                        <label for="tel-service">Telefone</label>
+                        <input type="tel" name="tel-service" id="tel-service" value="(10) 99910-1010" required disabled>
+
+                        <label for="cpf-service">CPF</label>
+                        <input type="text" name="cpf-service" id="cpf-service" value="123.456.789-01" disabled>
                 </fieldset>
                 <fieldset>
                     <legend>Dados do serviço</legend>
             
-                    <div> <!-- Inputs para ação de criar e editar agendamento -->
-                        <label for="type-manageservice">Serviço</label>
-                        <input type="text" name="type-manageservice" id="type-manageservice" required>
-                        <label for="time-manageservice">Horário</label>
-                        <input type="datetime-local" name="time-manageservice" id="time-manageservice" required>
-                    </div>
+                        <label for="type-service">Serviço</label>
+                        <input type="text" name="type-service" id="type-service" value="Corte de cabelo" required disabled>
 
-                    <div> <!-- Outputs para ver detalhes de um agendamento -->
-                        <label for="type-viewservice">Serviço</label>
-                        <output id="type-viewservice">Corte</output>
-                        <label for="time-viewservice">Horário</label>
-                        <output id="time-viewservice">26/03/2025 - 13:30</output>
-                    </div>
+                        <label for="time-service">Horário</label>
+                        <input type="datetime-local" name="time-service" id="time-service" value="2025-04-01T11:30" required disabled>
                 </fieldset>
                 <fieldset>
                     <legend>Outros</legend>
 
-                    <div> <!-- Inputs para ação de criar e editar agendamento -->
-                        <label for="notes-manageservice">Anotações</label>
-                        <textarea name="notes-manageservice" id="notes-manageservice"></textarea>
-                    </div>
-
-                    <div> <!-- Outputs para ver detalhes de um agendamento -->
-                        <label for="notes-viewservice">Anotações</label>
-                        <output id="notes-viewservice">Nenhuma.</output>
-                    </div>
+                        <label for="notes-service">Anotações</label>
+                        <textarea name="notes-service" id="notes-service" disabled>Nenhuma.</textarea>
                 </fieldset>
                 <fieldset>
                     <legend>Dados de pagamento</legend>
 
-                    <div> <!-- Inputs para ação de criar e editar agendamento -->
-                        <label for="method-manageservice">Método</label>
-                        <select name="method-manageservice" id="method-manageservice" required >
+                        <label for="method-service">Método</label>
+                        <select name="method-service" id="method-service" required disabled>
                             <option value="money">Dinheiro</option>
                             <option value="pix" selected>Pix</option>
                             <option value="debit">Débito</option>
@@ -134,25 +117,15 @@
                             <option value="credit-part">Crédito Parcelado</option>
                             <option value="ted">Transferência</option>
                         </select>
-                        <label for="value-manageservice">Valor</label>
-                        <input type="number" name="value-manageservice" id="value-manageservice" step="0.01" required>
-                        <label for="status-manageservice">Status</label>
-                        <select name="status-manageservice" id="status-manageservice" required>
+
+                        <label for="value-service">Valor</label>
+                        <input type="number" name="value-service" id="value-service" step="0.01" value="30.00" required disabled>
+
+                        <label for="status-service">Status</label>
+                        <select name="status-service" id="status-service" required disabled>
                             <option value="paid">Pago</option>
                             <option value="pending" selected>Pendente</option>
                         </select>
-                    </div>
-
-                    <div> <!-- Outputs para ver detalhes de um agendamento -->
-                        <label for="method-viewservice">Método</label>
-                        <output id="method-viewservice">PIX</output>
-        
-                        <label for="value-viewservice">Valor</label>
-                        <output id="value-viewservice">R$100,00</output>
-        
-                        <label for="status-viewservice">Status</label>
-                        <output id="status-viewservice">Pago</output>
-                    </div>
                 </fieldset>
                 <div>
                     <button type="submit">Concluído</button> <!-- Botão para confirmar a edição ou criação do agendamento -->
