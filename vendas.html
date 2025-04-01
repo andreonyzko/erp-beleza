@@ -30,19 +30,16 @@
             </ul>
         </nav>
         <main>
-            <section> <!-- Seção de título da página e botão para novo agendamento -->
-                <h1>Agenda</h1>
+            <section> <!-- Seção de título da página e botão para nova venda -->
+                <h1>Vendas</h1>
                 <button>Novo</button>
             </section>
             <form action=""> <!-- Formulário de filtros -->
                 <label for="date-filter">Data</label>
                 <input type="date" name="date-filter" id="date-filter">
 
-                <label for="service-filter">Serviço</label>
-                <input type="search" name="service-filter" id="service-filter">
-
-                <label for="client-filter">Cliente</label>
-                <input type="search" name="client-filter" id="client-filter">
+                <label for="buyer-filter">Comprador</label>
+                <input type="search" name="buyer-filter" id="buyer-filter">
                 
                 <label for="phone-filter">Telefone</label>
                 <input type="tel" name="phone-filter" id="phone-filter">
@@ -50,18 +47,17 @@
                 <label for="cost-filter">Valor</label>
                 <input type="number" name="cost-filter" id="cost-filter" min="0" step="0.01" value="0">
 
-                <label for="status-filter">Status</label>
-                <select name="status-filter" id="status-filter" required>
+                <label for="status">Status</label>
+                <select name="status" id="status" required>
                     <option value="paid">Pago</option>
                     <option value="pending" selected>Pendente</option>
                 </select>
             </form>
-            <table> <!-- Tabela da agenda -->
+            <table> <!-- Tabela das vendas -->
                 <thead>
                     <tr>
                         <td>Data</td>
-                        <td>Serviço</td>
-                        <td>Cliente</td>
+                        <td>Comprador</td>
                         <td>Telefone</td>
                         <td>Valor</td>
                         <td>Pagamento</td>
@@ -75,13 +71,13 @@
     </div>
     <div> <!-- Modal -->
         <div> <!-- Conteúdo do modal de ver, editar e criar agendamento -->
-            <h2>AGENDAMENTO #10</h2>
+            <h2>VENDA #10</h2>
             <form action="">
                 <fieldset>
-                    <legend>Dados do cliente</legend>
+                    <legend>Dados do comprador</legend>
 
-                        <label for="client-modal">Nome</label>
-                        <input type="text" name="client-modal" id="client-modal" value="André" required disabled>
+                        <label for="buyer-modal">Nome</label>
+                        <input type="text" name="buyer-modal" id="buyer-modal" value="André" required disabled>
 
                         <label for="tel-modal">Telefone</label>
                         <input type="tel" name="tel-modal" id="tel-modal" value="(10) 99910-1010" required disabled>
@@ -90,22 +86,12 @@
                         <input type="text" name="cpf-modal" id="cpf-modal" value="123.456.789-01" disabled>
                 </fieldset>
                 <fieldset>
-                    <legend>Dados do serviço</legend>
-            
-                        <label for="type-modal">Serviço</label>
-                        <input type="text" name="type-modal" id="type-modal" value="Corte de cabelo" required disabled>
-
-                        <label for="time-modal">Horário</label>
-                        <input type="datetime-local" name="time-modal" id="time-modal" value="2025-04-01T11:30" required disabled>
-                </fieldset>
-                <fieldset>
-                    <legend>Outros</legend>
+                    <legend>Dados da venda e pagamento</legend>
+                        <label for="date-modal">Data</label>
+                        <input type="date" name="date-modal" id="date-modal" value="2025-04-01" required disabled>
 
                         <label for="notes-modal">Anotações</label>
                         <textarea name="notes-modal" id="notes-modal" disabled>Nenhuma.</textarea>
-                </fieldset>
-                <fieldset>
-                    <legend>Dados de pagamento</legend>
 
                         <label for="method-modal">Método</label>
                         <select name="method-modal" id="method-modal" required disabled>
@@ -125,6 +111,29 @@
                             <option value="paid">Pago</option>
                             <option value="pending" selected>Pendente</option>
                         </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Itens</legend>
+
+                    <label for="amount-modal">Quantidade</label>
+                    <input type="number" name="amount-modal" id="amount-modal" step="1" value="1" min="1" required disabled>
+
+                    <label for="product-modal">Produto</label>
+                    <input type="text" name="product-modal" id="product-modal" required disabled>
+
+                    <button disabled>+</button>
+                    
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Uni.</td>
+                                <td>Produto</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
                 </fieldset>
                 <div>
                     <button type="submit">Concluído</button> <!-- Botão para confirmar a edição ou criação do agendamento -->
