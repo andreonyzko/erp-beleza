@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ONYERP - Beleza</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/login.css">
 </head>
+
 <body>
-    <header>
-        <div> <!-- ELEMENTOS DO CABEÇALHO -->
-            <img src="media/menu-icons/menu-icon.png" alt="menu icon">
-            <img src="media/logo.png" alt="logo image">
+    <main>
+        <div id="login-container">
+            <form action="" id="login-form">
+                <div>
+                    <h1>Sign in</h1>
+                    <p id="sign-subtitle">Informe seus dados:</p>
+                </div>
+        
+                <div class="inputs-container">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" autocomplete="email" required>
+                </div>
+                <div class="inputs-container">
+                    <label for="password">Senha</label>
+                    <input type="password" name="password" id="password" required>
+                    <p id="forgot-password">Esqueceu a senha? <a href="#">Entrar em contato</a></p>
+                </div>
+                <button type="submit" id="login-btn">Entrar</button>
+            </form>
         </div>
-    </header>
-    <div> <!-- Flexbox para o nav e a main -->
-        <nav>
-            <ul>
-                <li><a href=""><img src="media/menu-icons/home-icon.png" alt="home icon"><p>Home</p></a></li>
-                <li><a href=""><img src="media/menu-icons/calendar-icon.png" alt="calendar icon"><p>Agenda</p></a></li>
-                <li><a href=""><img src="media/menu-icons/sell-icon.png" alt="sell icon"><p>Vendas</p></a></li>
-                <li><a href=""><img src="media/menu-icons/buy-icon.png" alt="buy icon"><p>Despesas</p></a></li>
-                <li>
-                    <a href=""><img src="media/menu-icons/money-icon.png" alt="money icon"> <p>Financeiro</p></a>
-                    <ul>
-                        <li><a href="">A pagar</a></li>
-                        <li><a href="">A receber</a></li>
-                        <li><a href="">Relatório</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-        <main></main>
-    </div>
+        <div id="login-img"></div>
+    </main>
     <footer>
-        <p>Developed by André Luís Onyszko</p>
+        <p>Developed by Andre Onyszko.</p>
     </footer>
+
+    <script src="scripts/login.js"></script>
 </body>
 </html>
