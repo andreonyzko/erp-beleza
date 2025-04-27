@@ -34,51 +34,51 @@ main {
         width: 60%;
         padding: 10%;
         border-radius: 20px;
-    
+
         background-color: white;
         color: black;
-    
+
         display: flex;
         flex-direction: column;
         gap: 20px;
-    
-        .login-error{
+
+        .login-error {
             color: tomato;
             font-weight: bolder;
         }
-    
+
         .inputs-container {
             display: flex;
             flex-direction: column;
             gap: 5px;
-    
+
             font-weight: bold;
-    
+
             input {
                 padding: 5px;
                 border-radius: 5px;
             }
         }
-    
+
         #forgot-password {
             font-size: 0.8em;
             font-weight: normal;
             text-align: right;
-        
+
             a {
                 color: #9C8867;
             }
         }
-    
+
         button[type="submit"] {
             background-color: #9C8867;
             color: white;
-        
+
             font-size: 1.1em;
             border: 0;
             padding: 15px;
             border-radius: 10px;
-    
+
             cursor: pointer;
         }
     }
@@ -99,29 +99,29 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-    body{
+    body {
         grid-template: 1fr auto / 1fr;
     }
 
-    main{
+    main {
         grid-template: 1fr / 1fr 1fr;
     }
 
-    #login-container{
+    #login-container {
         grid-area: 1;
 
-        #login-form{
+        #login-form {
             width: 50%;
-            
-            .inputs-container{
-                input{
+
+            .inputs-container {
+                input {
                     padding: 10px;
                 }
             }
         }
     }
 
-    #login-img{
+    #login-img {
         grid-area: auto;
     }
 }
