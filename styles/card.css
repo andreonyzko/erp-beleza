@@ -45,10 +45,10 @@
     }
 
     .green-card {
-        background-color: #7ce59f;
+        background-color: #51C7AE;
 
         .card-highlight {
-            background-color: #5bde6a;
+            background-color: #26B99A;
         }
     }
 
@@ -57,6 +57,14 @@
 
         .card-highlight {
             background-color: #FF9A00;
+        }
+    }
+
+    .red-card{
+        background-color: #CE5D5D;
+
+        .card-highlight {
+            background-color: #C23434;
         }
     }
 }

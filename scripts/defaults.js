@@ -7,3 +7,11 @@ const navMainContainer = document.querySelector('.nav-main-container')
 navBtn.addEventListener('click', () => {
     navMainContainer.classList.toggle('unnav');
 })
+
+// IMPRIMIR
+const printBtn = document.querySelector('.report-submit');
+if(printBtn){
+    printBtn.addEventListener('click', () =>{
+        window.print();
+    })
+}
