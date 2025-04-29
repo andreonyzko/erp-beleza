@@ -50,15 +50,15 @@
                     </a>
                     <ul>
                         <li>
-                            <a href="pagar.html">
+                            <a href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M466-466H252v-28h214v-214h28v214h214v28H494v214h-28v-214Z"/></svg>
-                                <span>A pagar</span>
+                                <span>A receber</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="pagar.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M252-466v-28h456v28H252Z"/></svg>
-                                <span>A receber</span>
+                                <span>A pagar</span>
                             </a>
                         </li>
                         <li>
@@ -73,7 +73,217 @@
         </nav>
         <div class="main-container">
             <main>
+                <section class="title-btn-container"> <!-- Seção de título da página e botão para novo agendamento -->
+                    <h1>CONTAS A RECEBER</h1>
+                </section>
+                <form action="" class="filter-form"> <!-- Formulário de filtros -->
+                    <div>
+                        <label for="start-date-filter">Data</label>
+                        <input type="date" name="start-date-filter" id="start-date-filter">
+                    </div>
+    
+                    <div>
+                        <label for="end-date-filter">Até</label>
+                        <input type="date" name="end-date-filter" id="end-date-filter">
+                    </div>
 
+                    <div>
+                        <label for="title-filter">Atividade</label>
+                        <input type="search" name="title-filter" id="title-filter">
+                    </div>
+    
+                    <div>
+                        <label for="person-filter">Remetente</label>
+                        <input type="search" name="person-filter" id="person-filter">
+                    </div>
+    
+                    <div>
+                        <label for="phone-filter">Telefone</label>
+                        <input type="tel" name="phone-filter" id="phone-filter">
+                    </div>
+    
+                    <div>
+                        <label for="value-filter">Valor</label>
+                        <input type="number" name="value-filter" id="value-filter" min="0" step="0.01" value="0">
+                    </div>
+    
+                    <div>
+                        <label for="status-filter">Origem</label>
+                        <select name="status-filter" id="status-filter" required>
+                            <option value="all">Todos</option>
+                            <option value="service">Serviço</option>
+                            <option value="sell">Venda</option>
+                        </select>
+                    </div>
+                </form>
+                <div class="table-container">
+                    <table> <!-- Tabela da agenda -->
+                        <thead>
+                            <tr>
+                                <th>Data</th>
+                                <th>Atividade</th>
+                                <th>Remetente</th>
+                                <th>Telefone</th>
+                                <th>Valor</th>
+                                <th>Origem</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>26/04/2025 - 10:00 AM</td>
+                                <td>Compra de produtos para cabelo</td>
+                                <td>Distribuidora Beleza Pro</td>
+                                <td>42999452441</td>
+                                <td>R$350,00</td>
+                                <td>Serviço</td>
+                            </tr>
+                            <tr>
+                                <td>27/04/2025 - 10:15 AM</td>
+                                <td>Venda</td>
+                                <td>Lucas Pereira da Silva</td>
+                                <td>41987654321</td>
+                                <td>R$200,00</td>
+                                <td>Venda</td>
+                            </tr>
+                            <tr>
+                                <td>28/04/2025 - 1:00 PM</td>
+                                <td>Compra de esmaltes</td>
+                                <td>Loja Esmalteria</td>
+                                <td>41999887766</td>
+                                <td>R$120,00</td>
+                                <td>Serviço</td>
+                            </tr>
+                            <tr>
+                                <td>28/04/2025 - 12:30 PM</td>
+                                <td>Venda</td>
+                                <td>Maria Fernanda Costa</td>
+                                <td>41876543210</td>
+                                <td>R$80,00</td>
+                                <td>Venda</td>
+                            </tr>
+                            <tr>
+                                <td>30/04/2025 - 9:30 AM</td>
+                                <td>Material de limpeza</td>
+                                <td>Supermercado Local</td>
+                                <td>42998765432</td>
+                                <td>R$80,00</td>
+                                <td>Serviço</td>
+                            </tr>
+                            <tr>
+                                <td>29/04/2025 - 4:45 PM</td>
+                                <td>Venda</td>
+                                <td>José Eduardo Ramos</td>
+                                <td>41999887766</td>
+                                <td>R$350,00</td>
+                                <td>Venda</td>
+                            </tr>
+                            <tr>
+                                <td>02/05/2025 - 12:00 PM</td>
+                                <td>Serviços de telefonia</td>
+                                <td>Operadora de Telecomunicações</td>
+                                <td>42993344556</td>
+                                <td>R$150,00</td>
+                                <td>Serviço</td>
+                            </tr>
+                            <tr>
+                                <td>30/04/2025 - 9:00 AM</td>
+                                <td>Venda</td>
+                                <td>Ana Carolina Souza</td>
+                                <td>41988776655</td>
+                                <td>R$220,00</td>
+                                <td>Venda</td>
+                            </tr>
+                            <tr>
+                                <td>04/05/2025 - 11:00 AM</td>
+                                <td>Salário de cabeleireiro</td>
+                                <td>Maria Oliveira</td>
+                                <td>42997765432</td>
+                                <td>R$1.800,00</td>
+                                <td>Serviço</td>
+                            </tr>
+                            <tr>
+                                <td>01/05/2025 - 11:30 AM</td>
+                                <td>Venda</td>
+                                <td>Marcelo da Silva Oliveira</td>
+                                <td>41994561234</td>
+                                <td>R$130,00</td>
+                                <td>Venda</td>
+                            </tr>
+                            <tr>
+                                <td>06/05/2025 - 2:00 PM</td>
+                                <td>Compra de toalhas e uniformes</td>
+                                <td>Loja de Tecidos</td>
+                                <td>42998877655</td>
+                                <td>R$200,00</td>
+                                <td>Serviço</td>
+                            </tr>
+                            <tr>
+                                <td>02/05/2025 - 2:00 PM</td>
+                                <td>Venda</td>
+                                <td>Carla Regina Lima</td>
+                                <td>42998765432</td>
+                                <td>R$180,00</td>
+                                <td>Venda</td>
+                            </tr>
+                            <tr>
+                                <td>08/05/2025 - 3:30 PM</td>
+                                <td>Treinamento de equipe</td>
+                                <td>Consultoria Profissional</td>
+                                <td>42996543210</td>
+                                <td>R$600,00</td>
+                                <td>Serviço</td>
+                            </tr>
+                            <tr>
+                                <td>03/05/2025 - 1:00 PM</td>
+                                <td>Venda</td>
+                                <td>Roberto Alves da Silva</td>
+                                <td>42999876543</td>
+                                <td>R$90,00</td>
+                                <td>Venda</td>
+                            </tr>
+                            <tr>
+                                <td>10/05/2025 - 12:30 PM</td>
+                                <td>Serviços de manutenção de ar condicionado</td>
+                                <td>Ar Climatizado Ltda.</td>
+                                <td>42997765432</td>
+                                <td>R$200,00</td>
+                                <td>Serviço</td>
+                            </tr>
+                            <tr>
+                                <td>04/05/2025 - 10:30 AM</td>
+                                <td>Venda</td>
+                                <td>Fernanda Pereira dos Santos</td>
+                                <td>42996543210</td>
+                                <td>R$170,00</td>
+                                <td>Venda</td>
+                            </tr>
+                            <tr>
+                                <td>12/05/2025 - 10:00 AM</td>
+                                <td>Reparos elétricos</td>
+                                <td>Eletricista João</td>
+                                <td>42999887766</td>
+                                <td>R$150,00</td>
+                                <td>Serviço</td>
+                            </tr>
+                            <tr>
+                                <td>05/05/2025 - 12:15 PM</td>
+                                <td>Venda</td>
+                                <td>Paulo Henrique Alves</td>
+                                <td>41988765432</td>
+                                <td>R$200,00</td>
+                                <td>Venda</td>
+                            </tr>
+                            <tr>
+                                <td>14/05/2025 - 2:45 PM</td>
+                                <td>Publicidade (Google Ads)</td>
+                                <td>Agência Digital</td>
+                                <td>42996543210</td>
+                                <td>R$450,00</td>
+                                <td>Serviço</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </main>
         </div>
     </div>

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/card.css">
     <link rel="stylesheet" href="styles/modal.css">
     <link rel="stylesheet" href="styles/structs.css">
+    <link rel="stylesheet" href="styles/report.css">
 </head>
 
 <body>
@@ -50,15 +51,15 @@
                     </a>
                     <ul>
                         <li>
-                            <a href="pagar.html">
+                            <a href="receber.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M466-466H252v-28h214v-214h28v214h214v28H494v214h-28v-214Z"/></svg>
-                                <span>A pagar</span>
+                                <span>A receber</span>
                             </a>
                         </li>
                         <li>
-                            <a href="receber.html">
+                            <a href="pagar.html">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M252-466v-28h456v28H252Z"/></svg>
-                                <span>A receber</span>
+                                <span>A pagar</span>
                             </a>
                         </li>
                         <li>
@@ -73,7 +74,85 @@
         </nav>
         <div class="main-container">
             <main>
-
+                <div class="section">
+                    <p class="section-title">Relatório</p>
+                    <p class="section-subtitle">Período: 27/04/2025 - 27/05/2025</p>
+                </div>
+                <div>
+                    <section class="card-container"> <!-- Seção de informações rápidas de faturamento, tarefas e pendencias-->
+                        <div class="card blue-card">
+                            <p class="title-card">Faturamento</p>
+                            <div class="card-highlight">
+                                <p>R$0,00</p>
+                            </div>
+                            <p class="details-card">
+                                Serviços: +R$0,00 <br>
+                                Vendas: +R$0,00 <br>
+                                Despesas: -R$0,00
+                            </p>
+                        </div>
+                    
+                        <div class="card green-card">
+                            <p class="title-card">Créditos</p>
+                            <div class="card-highlight">
+                                <p>R$0,00</p>
+                            </div>
+                            <p class="details-card">
+                                Serviços: R$0,00 <br>
+                                Vendas: R$0,00
+                            </p>
+                        </div>
+                        <div class="card orange-card">
+                            <p class="title-card">Pendencias</p>
+                            <div class="card-highlight">
+                                <p>R$0,00</p>
+                            </div>
+                            <p class="details-card">
+                                Pagar: R$0,00 <br>
+                                Receber: R$0,00
+                            </p>
+                        </div>
+                        <div class="card red-card">
+                            <p class="title-card">Débitos</p>
+                            <div class="card-highlight">
+                                <p>R$0,00</p>
+                            </div>
+                            <p class="details-card">
+                                Despesas: R$0,00
+                            </p>
+                        </div>
+                    </section>
+                </div>
+                <div class="report-details-btn-container">
+                    <div>
+                        <div class="report-statistics-container">
+                            <p class="report-statistics"><span>0</span> Serviços</p>
+                            <p class="report-statistics"><span>0</span> Vendas</p>
+                            <p class="report-statistics"><span>0</span> Compras</p>
+                        </div>
+                        <div class="report-desc-container">
+                            <div>
+                                <p>
+                                    Serviços: +R$<span>0,00</span> <br>
+                                    Vendas: +R$<span>0,00</span> <br>
+                                    Despesas: -R$<span>0,00</span> <br>
+                                    <br>
+                                    <span class="report-total">Faturamento: R$<span>0,00</span></span>
+                                </p>
+                            </div>
+                            <div>
+                                <p>
+                                    Serviços: +R$<span>0,00</span> <br>
+                                    Vendas: +R$<span>0,00</span> <br>
+                                    Despesas: -R$<span>0,00</span> <br>
+                                    <br>
+                                    <span class="report-total">Pendencias: R$<span>0,00</span></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="report-submit">Baixar e zerar</button>
+                </div>
             </main>
         </div>
     </div>
