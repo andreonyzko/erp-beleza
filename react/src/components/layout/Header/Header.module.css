@@ -1,0 +1,25 @@
+header {
+    background-color: var(--primary);
+
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    padding-left: 20px;
+
+    a {
+        height: 40%;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    img {
+        height: 40%;
+    }
+
+    .nav_btn {
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,60 @@
+.card {
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.31);
+    text-align: center;
+
+    * {
+        padding: 10px;
+    }
+
+    .title_card {
+        font-weight: bolder;
+    }
+
+    .card_highlight {
+        font-size: 1.5em;
+    }
+
+    .details_card {
+        font-size: 0.8em;
+    }
+}
+
+.blue_card {
+    background-color: #7CCDE5;
+
+    .card_highlight {
+        background-color: #5BC0DE;
+    }
+}
+
+.green_card {
+    background-color: #51C7AE;
+
+    .card_highlight {
+        background-color: #26B99A;
+    }
+}
+
+.orange_card {
+    background-color: #FFAF35;
+
+    .card-highlight {
+        background-color: #FF9A00;
+    }
+}
+
+.red_card{
+    background-color: #CE5D5D;
+
+    .card-highlight {
+        background-color: #C23434;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .card{
+        width: 30%;
+    }
+}

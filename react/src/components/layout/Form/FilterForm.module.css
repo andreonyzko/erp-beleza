@@ -1,0 +1,25 @@
+.filter_form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    div {
+        display: flex;
+        flex-direction: column;
+
+        * {
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .filter_form {
+        flex-direction: row;
+
+        div {
+            flex-grow: 2;
+        }
+    }
+}

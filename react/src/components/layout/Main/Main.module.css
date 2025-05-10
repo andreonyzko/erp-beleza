@@ -1,0 +1,9 @@
+main{
+    overflow: hidden;
+    overflow-y: auto;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

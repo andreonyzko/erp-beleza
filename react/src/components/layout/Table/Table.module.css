@@ -1,0 +1,44 @@
+.table_title{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.table_container{
+    width: 100%;
+    overflow: hidden;
+    overflow-x: auto;
+    border-radius: 10px;
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        position: relative;
+    
+        thead {
+            background-color: var(--primary);
+            color: white;
+            text-transform: uppercase;
+        }
+    
+        td,
+        th {
+            padding: 10px;
+            text-align: left;
+        }
+    
+        tbody {
+            tr{
+                cursor: pointer;
+
+                &:hover{
+                    background-color: #26262652 !important;
+                }
+            }
+
+            tr:nth-child(odd) {
+                background-color: var(--grey);
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.button{
+    cursor: pointer;
+    color: white;
+    border: 0;
+    font-weight: bolder;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.btn_new{
+    background-color: var(--green);
+}
