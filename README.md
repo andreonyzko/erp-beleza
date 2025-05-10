@@ -7,9 +7,9 @@ Sistema de gestão de salões de beleza e clínicas estéticas, desenvolvido par
 ## ✨ Funcionalidades
 
 - 📅 Gestão de **agendamentos de clientes**
-- 💸 Controle de **vendas e serviços**
+- 💸 Controle de **vendas, despesas e serviços**
 - 📊 Geração de **relatórios financeiros**
-- 👩‍💼 Interface intuitiva para **usuários e administradores**
+- 👩‍💼 Interface intuitiva
 
 ---
 
